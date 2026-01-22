@@ -1,0 +1,49 @@
+[0m12:15:36.431635 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11a80ffe0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11ae9b7a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11ae9b920>]}
+
+
+============================== 12:15:36.456327 | 2e6408d9-159d-433e-ae51-212ee1bd9db0 ==============================
+[0m12:15:36.456327 [info ] [MainThread]: Running with dbt=1.11.2
+[0m12:15:36.456711 [debug] [MainThread]: running dbt with arguments {'use_colors': 'True', 'warn_error': 'None', 'static_parser': 'True', 'write_json': 'True', 'use_experimental_parser': 'False', 'introspect': 'True', 'printer_width': '80', 'cache_selected_only': 'False', 'invocation_command': 'dbt init', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'log_path': 'logs', 'version_check': 'True', 'empty': 'None', 'fail_fast': 'False', 'target_path': 'None', 'indirect_selection': 'eager', 'send_anonymous_usage_stats': 'True', 'debug': 'False', 'profiles_dir': '/Users/ccentola/.dbt', 'log_format': 'default', 'no_print': 'None', 'partial_parse': 'True', 'log_cache_events': 'False'}
+[0m12:17:42.559671 [debug] [MainThread]: Starter project path: /Users/ccentola/Documents/projects/airbnb-data/.venv/lib/python3.12/site-packages/dbt/include/starter_project
+[0m12:17:42.573359 [info ] [MainThread]: 
+Your new dbt project "airbnb_mds_project" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m12:17:42.574078 [info ] [MainThread]: Setting up your profile.
+[0m12:17:56.451269 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m12:17:56.452414 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m12:17:56.452884 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m12:22:19.753067 [info ] [MainThread]: Profile airbnb_mds_project written to /Users/ccentola/.dbt/profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m12:22:19.923187 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 403.55682, "process_in_blocks": "0", "process_kernel_time": 0.744758, "process_mem_max_rss": "141688832", "process_out_blocks": "0", "process_user_time": 3.012344}
+[0m12:22:19.925058 [debug] [MainThread]: Command `dbt init` succeeded at 12:22:19.924902 after 403.56 seconds
+[0m12:22:19.925750 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11a80ffe0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11bcbeff0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x128a026f0>]}
+[0m12:22:19.926185 [debug] [MainThread]: Flushing usage events
+[0m12:22:20.257024 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m14:56:46.823166 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1051d7980>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1058f0e60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1058f0b30>]}
+
+
+============================== 14:56:46.826552 | 90e7a5b4-28fb-416b-ac8a-8912fe29f8b9 ==============================
+[0m14:56:46.826552 [info ] [MainThread]: Running with dbt=1.11.2
+[0m14:56:46.826938 [debug] [MainThread]: running dbt with arguments {'target_path': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'log_path': 'logs', 'log_format': 'default', 'indirect_selection': 'eager', 'warn_error': 'None', 'printer_width': '80', 'version_check': 'True', 'send_anonymous_usage_stats': 'True', 'use_colors': 'True', 'no_print': 'None', 'partial_parse': 'True', 'write_json': 'True', 'debug': 'False', 'empty': 'False', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'invocation_command': 'dbt compile', 'quiet': 'False', 'cache_selected_only': 'False', 'use_experimental_parser': 'False', 'fail_fast': 'False', 'profiles_dir': '/Users/ccentola/.dbt'}
+[0m14:56:46.827358 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path /Users/ccentola/Documents/projects/airbnb-data/dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m14:56:46.837572 [debug] [MainThread]: Resource report: {"command_name": "compile", "command_success": false, "command_wall_clock_time": 0.06201496, "process_in_blocks": "0", "process_kernel_time": 0.153897, "process_mem_max_rss": "104939520", "process_out_blocks": "0", "process_user_time": 0.816216}
+[0m14:56:46.838083 [debug] [MainThread]: Command `dbt compile` failed at 14:56:46.838012 after 0.06 seconds
+[0m14:56:46.838345 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1058f0e60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1058f2d20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1058f2b40>]}
+[0m14:56:46.838597 [debug] [MainThread]: Flushing usage events
+[0m14:56:47.081355 [debug] [MainThread]: An error was encountered while trying to flush usage events
